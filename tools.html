@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>🎓 StudyOS</h2>
+  <a href="index.html">Dashboard</a>
+  <a href="tools.html">Tools</a>
+</div>
+
+<div class="main">
+
+  <!-- Predictor -->
+  <div class="panel" id="predict">
+    <h2>📊 Exam Predictor</h2>
+    <input id="level" type="number" placeholder="Level (1–10)">
+    <button onclick="predict()">Predict</button>
+    <p id="result"></p>
+  </div>
+
+  <!-- Calculator -->
+  <div class="panel" id="calc">
+    <h2>🧮 Percentage Calculator</h2>
+    <input id="marks" placeholder="Marks">
+    <input id="total" placeholder="Total">
+    <button onclick="calc()">Calculate</button>
+    <p id="percent"></p>
+  </div>
+
+  <!-- Timer -->
+  <div class="panel" id="timer">
+    <h2>⏱ Focus Timer</h2>
+    <h1 id="time">25:00</h1>
+    <button onclick="start()">Start</button>
+  </div>
+
+  <!-- Tips -->
+  <div class="panel" id="tips">
+    <h2>🎯 Study Tips</h2>
+    <ul>
+      <li>Study in 25 min sessions</li>
+      <li>Take short breaks</li>
+      <li>Revise daily</li>
+      <li>Stay consistent</li>
+    </ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
